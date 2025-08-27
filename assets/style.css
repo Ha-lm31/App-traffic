@@ -1,0 +1,18 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+h2, h3 {
+  color: #333;
+}
+
+.navbar {
+  border-radius: 8px;
+}
+
+.table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+}
