@@ -23,66 +23,22 @@
         function setActiveLink() {
             // On récupère le hash de l'URL (#home, #apps, etc.)
             const currentHash = window.location.hash || "#home";
-
             // Sélectionne tous les liens
             const links = document.querySelectorAll(".list2 a");
-
             links.forEach(link => {
                 // Supprime la classe active
                 link.classList.remove("active");
-
                 // Ajoute active si le href correspond au hash
                 if (link.getAttribute("href") === currentHash) {
                     link.classList.add("active");
                 }
             });
         }
-
         // Quand on charge la page
         window.addEventListener("load", setActiveLink);
-
         // Quand on clique sur un lien ou change de section
         window.addEventListener("hashchange", setActiveLink);
     </script>
-
-    <pre>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Sit laudantium tenetur voluptate tempora dolorem autem tempore rem dicta corporis,
-        ex necessitatibus dolores architecto error veritatis debitis facilis quam soluta non!
-    </pre>
-
+    
 </body>
 </html>
